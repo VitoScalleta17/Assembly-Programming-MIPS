@@ -7,7 +7,7 @@
   myDouble:  .double 7.202
   PI: .float 3.14 
    
- .text 
+.text 
   li $v0, 4                             #Preparing system to print a String
   la $a0, myMessage                     #Printing the String
   syscall
