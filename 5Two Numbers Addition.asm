@@ -2,6 +2,7 @@
     message1: .asciiz "Enter 1st Number="
     message2: .asciiz "Enter 2nd Number="
     message3: .asciiz "The Sum is="
+
 .text
     #Asking the User to Enter the 1st Number
     li $v0,4
