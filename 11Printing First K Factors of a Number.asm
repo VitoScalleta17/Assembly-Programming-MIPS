@@ -1,9 +1,9 @@
 .data
-Whitespace: .asciiz " "
-Newline: .asciiz "/n"
-Factors: .asciiz "The Factors are="
-Input:  .asciiz "Enter the number="
-Upto: .asciiz "\nNumbers of Factors to be printed= "
+    Whitespace: .asciiz " "
+    Newline: .asciiz "/n"
+    Factors: .asciiz "The Factors are="
+    Input:  .asciiz "Enter the number="
+    Upto: .asciiz "\nNumbers of Factors to be printed= "
 
 .text
     la $a0, Input
