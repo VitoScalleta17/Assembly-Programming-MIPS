@@ -1,8 +1,8 @@
 .data
-Whitespace: .asciiz " "
-Newline: .asciiz "/n"
-Factors: .asciiz "The Factors are="
-Input:  .asciiz "Enter the number= "
+    Whitespace: .asciiz " "
+    Newline: .asciiz "/n"
+    Factors: .asciiz "The Factors are="
+    Input:  .asciiz "Enter the number= "
 
 .text
     la $a0, Input
