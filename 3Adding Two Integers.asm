@@ -2,7 +2,8 @@
    prompt1:  .asciiz "Enter the 1st Number=\n"
    prompt2:  .asciiz "Enter the 2nd Number=\n"
    message:  .asciiz "The Sum is="
- .text
+
+.text
    #Asking the user to enter input
    li $v0, 4
    la $a0, prompt1
