@@ -2,6 +2,7 @@
      message1: .asciiz "Enter the 1st Number="
      message2: .asciiz "Enter the 2nd Number="
      message3: .asciiz "The Product is="
+
 .text
     #Asking the User to Enter the 1st Number
     li $v0,4
