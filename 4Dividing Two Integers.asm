@@ -4,6 +4,7 @@
 	Quotient:  .asciiz "The value of the Quotient is="
 	Remainder: .asciiz "The value of the Remainder is="
 	Newline:   .asciiz "\n"
+
 .text
  	#Printing message1
  	li $v0, 4
