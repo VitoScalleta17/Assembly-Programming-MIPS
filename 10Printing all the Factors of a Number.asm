@@ -2,7 +2,7 @@
     Whitespace: .asciiz " "
     Newline: .asciiz "/n"
     Factors: .asciiz "The Factors are="
-    Input:  .asciiz "Enter the number= "
+    Input:  .asciiz "Enter the number="
 
 .text
     la $a0, Input
@@ -17,8 +17,8 @@
    While:
 	bgt  $t1,$t3,Exit #While i is less than or equal to n+1
 	div $t0,$t1
-	mfhi $t2 #$t2= Remainder
-	beq $t2,0 FactorsPrinter #If n is divisible by I that is n%i==0 
+	mfhi $t2 #$t2=Remainder
+	beq $t2,0 FactorsPrinter #If n is divisible by i that is n%i==0 
 	addi $t1,$t1,1 #i++
 	jal While
 
