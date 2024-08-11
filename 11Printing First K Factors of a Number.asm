@@ -3,7 +3,7 @@
     Newline: .asciiz "/n"
     Factors: .asciiz "The Factors are="
     Input:  .asciiz "Enter the number="
-    Upto: .asciiz "\nNumbers of Factors to be printed= "
+    Upto: .asciiz "\nNumbers of Factors to be printed="
 
 .text
     la $a0, Input
@@ -17,7 +17,7 @@
     move $t5, $v0 #$t5=Max count 
     
     addi $t3,$t0,1
-    li $t4,0 #t4= 0
+    li $t4,0 #t4=0
     li $t1,1 #i=1
     jal While
     jal End
@@ -25,9 +25,9 @@
    While:
 	bgt  $t1,$t3,Exit #While(i<=n+1)
 	div $t0,$t1
-	mfhi $t2 #$t2= Remainder
+	mfhi $t2 #$t2=Remainder
 	beq $t4,$t5,Exit #If Count==MaximumCount
-	beq $t2,0 FactorsPrinter #If( n%i==0 ) 	
+	beq $t2,0 FactorsPrinter #If(n%i==0) 	
 	addi $t1,$t1,1 #Increment i by 1
 	jal While
 
